@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="B2B-Domestic" >
+    
+    <listeners>
+        <listener class-name="testNgTutorials.IAnnotationTransferClass"></listener>
+    </listeners>
+    
+    <test name="Selenium Test"  >
+    <classes>
+        <class name="testNgTutorials.RerunFailedTestCase"></class>
+
+    </classes>
+        
+
+    </test>
+</suite>
