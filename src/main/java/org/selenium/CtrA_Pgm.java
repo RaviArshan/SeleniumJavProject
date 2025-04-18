@@ -9,9 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-import javax.swing.*;
-
-public class EnterKey {
+public class CtrA_Pgm {
     @Test
     public void enterKeyInGooogle() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
@@ -20,21 +18,15 @@ public class EnterKey {
         driver.manage().window().maximize();
         Thread.sleep(3000);
         WebElement ele = driver.findElement(By.name("q"));
-       /* ele.sendKeys("Ravi");
-        ele.sendKeys(Keys.ENTER);
-        Thread.sleep(3000);
-        driver.close();  */
-        Actions action=new Actions(driver);
-        action.click(ele);
-        Thread.sleep(2000);
-        action.keyDown(Keys.SHIFT);
-        action.sendKeys("Ravi");
-        action.keyUp(Keys.SHIFT);
-        Thread.sleep(2000);
-        action.sendKeys(Keys.ENTER).
-                build().perform();
-        Thread.sleep(3000);
-        driver.close();
+        // Create Actions instance
+        Actions actions = new Actions(driver);
 
+        // Click on input, type uppercase "RAVI" using SHIFT, then Ctrl+A to select all
+        actions.click(ele)
+                .keyDown(Keys.SHIFT).sendKeys("ravi").keyUp(Keys.SHIFT)
+                .keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL)
+                .build().perform();
+        Thread.sleep(4000);
+        driver.close();
     }
 }
