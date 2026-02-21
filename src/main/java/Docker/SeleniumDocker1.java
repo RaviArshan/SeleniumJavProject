@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class SeleniumDocker {
+public class SeleniumDocker1 {
 
     @Test
     public void dockerMethod() throws InterruptedException, MalformedURLException {
@@ -22,7 +22,7 @@ public class SeleniumDocker {
         DesiredCapabilities  dc = new DesiredCapabilities ();
         dc.setCapability("browserName", "chrome");
         RemoteWebDriver driver = new RemoteWebDriver(u,dc);
-       // driver.get("http://host.docker.internal:8080/login");
+        // driver.get("http://host.docker.internal:8080/login");
         driver.get("https://google.com/");
         driver.manage().window().maximize();
         System.out.println(driver.getTitle());

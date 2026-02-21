@@ -18,7 +18,7 @@ public class AssertVerify {
         System.out.println("After Assertion");
     }
 
-    @Test
+    @Test    //verify means soft assert
     public void verifyMethod()  // soft assert -- interm called as verify
     {
         SoftAssert soft=new SoftAssert();

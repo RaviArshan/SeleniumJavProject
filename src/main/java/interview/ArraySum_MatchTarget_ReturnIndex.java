@@ -1,30 +1,31 @@
 package interview;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 
 public class ArraySum_MatchTarget_ReturnIndex {
 
     public static void main(String[] args) {
         int arr[]={2,3,4,9,5};
         int target=13;
-        int ans[]=new int[2];
+        List<Integer> list=new ArrayList<>();
         HashMap<Integer,Integer> hashMap=new HashMap<>();
         for (int i=0;i<arr.length;i++)
         {
             int diff=target-arr[i];
             if (hashMap.containsKey(diff))
             {
-                ans[0]=i;
-                ans[1]=hashMap.get(diff);
+                list.add(i);
+                list.add(hashMap.get(diff));
                 break;
             }
             else{
                 hashMap.put(arr[i],i);
             }
         }
-        System.out.println("-------"+ans[0]);
-        System.out.println("-------"+ans[1]);
+        System.out.println("-------"+list);
 
 
 

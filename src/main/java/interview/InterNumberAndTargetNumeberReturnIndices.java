@@ -3,7 +3,7 @@ package interview;
 public class InterNumberAndTargetNumeberReturnIndices {
     public static void main(String[] args) {
         int nums[]={3,2,4};
-        int target1=6;
+        int target1=68;
        int result[]= interNumberAndTargetNumeberReturnIndices(nums, target1);
         System.out.println("[" + result[0] + ", " + result[1] + "]"); // Output: [1, 2]
     }

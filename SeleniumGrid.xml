@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="B2B-Domestic" >
+    
+    <test name="Selenium Test"  parallel="classes" thread-count="">
+    <classes>
+        <class name="Docker.SeleniumDocker"></class>
+        <class name="Docker.SeleniumDocker1"></class>
+        <class name="Docker.SeleniumDocker2"></class>
+
+
+    </classes>
+        
+
+    </test>
+</suite>

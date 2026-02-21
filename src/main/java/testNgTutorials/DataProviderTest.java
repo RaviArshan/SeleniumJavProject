@@ -31,8 +31,8 @@ public class DataProviderTest {
     @DataProvider(name = "dataProviderMethod")
     public Object[][] dataProviderToTest()
     {
-        Object[][] data={{"chrome","https://www.google.com/"},{"mozila","https://www.gmail.com/"}};
-        return  data;
+       return new  Object[][] {{"chrome","https://www.google.com/"},{"mozila","https://www.gmail.com/"}};
+
     }
 
 }

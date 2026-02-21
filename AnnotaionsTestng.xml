@@ -6,10 +6,37 @@
     <classes>
         <class name="testNgTutorials.TestngAnnotations"></class>
         <class name="testNgTutorials.TestngAnnotations1"></class>
-
-
     </classes>
-        
+
+
+        <!--
+
+
+beforeSuite
+beforeTest
+beforeTest
+beforeClass
+beforeMethod
+beforeMethod
+Test2
+Test1
+afterMethod
+afterMethod
+afterClass
+beforeClass
+beforeMethod
+beforeMethod
+Test2
+Test1
+afterMethod
+afterMethod
+afterClass
+afterTes
+afterTes
+afterSuite
+
+
+-->
 
     </test>
 </suite>

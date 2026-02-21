@@ -11,7 +11,8 @@ public class PrioityTest {
         System.out.println("Test 1");
     }
 
-    @Test(priority = 3,enabled = false)  // enabled = false we can skip
+    @Test(priority = 3,enabled = false)  //
+    // = false we can skip
     public void testTwo()
     {
         System.out.println("Test 2");

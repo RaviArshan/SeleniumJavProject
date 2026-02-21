@@ -21,9 +21,20 @@ public class BalanceParenthesis {
                         || (topElement=='['&&paranthesisCharacter==']')))
                 {
                     return false;
+                    //his means:
+                    //
+                    //If topElement and paranthesisCharacter do NOT form one of the valid pairs,
+                    //the string is invalid → we immediately return false.
+                    //
+                    //Example:
+                    //
+                    //If stack top is { and current char is ],
+                    //{ and ] do not match → unbalanced → return false.
                 }
 
             }
+
+            //{ [ ( --)
 
         }
 
